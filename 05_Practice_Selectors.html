@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 90%;
+            margin: auto;
+            font-size: 16px;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        .code_red{
+            background-color: lightgray;
+            color: rgb(229, 6, 6);
+        }
+        .code{
+            white-space: pre;
+        }
+        .text{
+            color: black;
+        }
+        .p_for_code{
+            background-color: lightgray;
+            width: 100%;    
+        }
+        .tags{
+            background-color: lightgray;
+            color: rgb(14, 145, 155);
+            padding: 3px;
+        }
+        .tags_p{
+            font-size:16px;
+        }
+        .italic{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<h1>HTML Tutorial</h1><hr>
+<h2>What is HTML?</h2>
+<p>
+    <strong>Hypertext Markup Language <abbr title="Hyper text markup language">
+    HTML</abbr></strong> is the standard markup language for 
+    creating web pages and web applications.<br><br>
+    Web browsers receive <abbr title="Hyper text markup language">
+        HTML</abbr> documents from a web server or from 
+    local
+    storage and render the documents into multimedia web pages.
+    <abbr title="Hyper text markup language">
+        HTML</abbr> describes the structure of a web page semantically
+    and originally included cues for the appearance of the
+    document.
+</p>
+
+<p>
+    <abbr title="Hyper text markup language">
+        HTML</abbr> elements are the building blocks of HTML pages.
+    With <abbr title="Hyper text markup language">
+        HTML</abbr> constructs, images and other objects such as
+    interactive forms may be embedded into the rendered page.
+    HTML provides a means to create structured documents by denoting
+    structural semantics for text such as headings, paragraphs, lists,
+    links, quotes and other items. <abbr title="Hyper text markup language">
+        HTML</abbr> elements are delineated by <span class="italic">tags</span>,
+    written using angle brackets. Tags such as <span class="code_red">&lt;img/&gt;</span>
+    and <span class="code_red">&lt;input/&gt;</span>
+    directly introduce content into the page. Other tags such as
+    <span class="code_red">&lt;p&gt;</span>
+    surround and provide information about document text and may
+    include other tags as sub-elements. Browsers do not display
+    the <abbr title="Hyper text markup language">
+        HTML</abbr> tags, but use them to interpret the content of the page.
+</p>
+
+<p>
+    <hr><h2>Markup</h2>
+    
+    <abbr title="Hyper text markup language">
+        HTML</abbr> markup consists of several key components, including those
+    called <span class="italic">tags</span> (and their <span class="italic">attributes</span>), character-based 
+    <span class="italic">data
+        types</span>, <span class="italic">character references</span> and <span class="italic">entity references</span>. <abbr title="Hyper text markup language">
+        HTML</abbr> tags
+    most commonly come in pairs like <span class="code_red">&lt;h1&gt;</span> and 
+    <span class="code_red">&lt;h1/&gt;</span>, although some
+    represent <span class="italic">empty elements</span> and so are unpaired, for example <span class="code_red">&lt;img&gt;</span>.
+    The first tag in such a pair is the <span class="italic">start tag</span>, and the second
+    is the <span class="italic">end tag</span> (they are also called <span class="italic">opening tags</span> and <span class="italic">closing tags</span>).<br><br>
+    Another important component is the <abbr title="Hyper text markup language">
+        HTML</abbr> <span class="italic">document type declaration</span>,
+    which triggers standards mode rendering.<br><br>
+    The following is an example of the classic "Hello, World!" program:
+</p>
+<p class="p_for_code">
+    <code class="code code_red">
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;<span class="text">This is a title</span>&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;p&gt;<span class="text">Hello world!</span>&lt;/p&gt;
+            &lt;/body&gt;
+        &lt;/html&gt;
+    </code><br> 
+    </p> <hr>         
+
+<p class="tags_p">
+    <strong>Tags:</strong>
+    <snap class="tags">
+        CodingScripting</snap>
+        <snap class="tags">head</snap>
+        <snap class="tags">HTML</snap>
+        <snap class="tags">Introduction to HTML</snap>
+        <snap class="tags">Landing</snap>
+        <snap class="tags">Links semantics</snap>
+        <snap class="tags">Structure</snap>
+        <snap class="tags"> Text</snap>
+    
+</p>
+</body>
+</html>

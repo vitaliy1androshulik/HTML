@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selectors</title>
+    <!--Css selector-->
+    <style>
+        /*create selector:
+        type{
+            property: value;
+            property: value;
+            property: value;
+            property: value;
+        }
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(241, 223, 202);
+        }
+        h1, h2{
+            background-color: aqua;
+            color: black;
+            text-align: center;
+        }
+        h2{
+            background-color: rgb(168, 233, 200);
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 18px 5px 1px black;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            ;
+        }
+        code{
+            background-color: black;
+            color: white;
+            font-size: large;
+            padding: 4px;
+            font-family: monospace;
+            border-radius: 10px;
+        }
+        mark{
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 10px;
+            line-height: 2;
+            background-color: aquamarine;
+        }
+        /*for classes*/
+        .mainword{
+            color:navajowhite;
+            border-radius: 5px;
+            text-decoration: underline;
+
+        }
+        .styled{
+            color:chartreuse;
+            border-radius: 20px;
+            border:2px solid black;
+        }
+        .serif-font{
+            font-family: serif;
+        }
+        .sans-serif-font{
+            font-family: sans-serif;
+        }
+        .monospace-font{
+            font-family: monospace;
+        }
+        .cursive-font{
+            font-family: cursive;
+        }
+        .fantasy-font{
+            font-family: fantasy;
+        }
+        #main-title{
+            background-color: rgb(249, 249, 0);
+            color: black;
+            border-color: black;
+            border-width:50px;
+            border-radius: 10px;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-title">
+        Intro to <abbr title="Cascading style sheets">css</abbr>
+    </h1>
+    <p>
+        H<sub>2</sub>O - water<br> 2<sup>3</sup> = 8<br>
+    </p>
+    <p>
+    
+        <strong>Lorem</strong> ipsum dolor sit amet consectetur adipisicing 
+        elit. Ut, harum?
+    </p>
+    <h2 style="background-color: bisque;
+    color: black;text-align: center;">Inline styles</h2>
+    <p style="background-color: bisque;
+    font-weight: bold; color: black;">Lorem ipsum, dolor sit amet consectetur
+         adipisicing elit. Rem eaque inventore impedit 
+         aliquid iure est fuga nesciunt harum aspernatur.
+          Excepturi reprehenderit amet nemo rem minima? 
+          Odio distinctio nulla non temporibus, perferendis 
+          quo maiores laborum. Nobis magnam, asperiores 
+          praesentium rerum voluptates consectetur, porro
+           dignissimos minus, quod quibusdam odio 
+           perspiciatis? Nulla, dolor!</p>
+    <h2>
+        Styling using Selectors
+    </h2> 
+    <p>Create variable : <code>int a = </code><br>
+        Write to console : <code>Console.WriteLine(); </code><br>
+        Cycle : <code>for(int=i;i<10;i++){}</code><br>
+        <mark>Lorem ipsum dolor sit amet consectetur adipisicing
+         elit.</mark> Ea quasi minima eum pariatur qui voluptas
+          inventore sit, quas quibusdam animi totam ab 
+          dolorum? Est maxime omnis vitae ad molestias ut. 
+          <mark>Explicabo ex error natus rem voluptatibus temporibus 
+          sunt</mark>Explicabo obcaecati amet enim quasi, esse libero dolores,
+           praesentium sint corrupti? Iusto, sequi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+        elit. At modi similique reiciendis in nesciunt 
+        veritatis harum inventore odit nam qui!</p>
+    <h2>
+        Styling using Selectors
+    </h2>
+    <h2>
+        Styling using Selectors
+    </h2>
+    <h2>
+        Styling using Selectors
+    </h2>
+    <h2>Example of using class selectors</h2>
+    <p><strong class="mainword">Lorem</strong> ipsum dolor sit amet consectetur 
+        adipisicing elit. <strong class="styled">Nostrum ipsum at dicta nesciunt</strong> 
+        dolor molestias amet? <strong class="styled">Ad totam earum vero.</strong></p>
+    <h2>serif-font</h2>
+    <p class="serif-font">Lorem ipsum dolor sit amet.</p>    
+    <h2>sans-serif-font</h2>
+    <p class="sans-serif-font">Lorem ipsum dolor sit amet.</p>    
+    <h2>monospace-font</h2>
+    <p class="monospace-font">Lorem ipsum dolor sit amet.</p>    
+    <h2>cursive-font</h2>
+    <p class="cursive-font">Lorem ipsum dolor sit amet.</p>    
+    <h2>fantasy-font</h2>
+    <p class="fantasy-font">Lorem ipsum dolor sit amet.</p>    
+</body>
+</html>
