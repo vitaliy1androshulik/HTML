@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        h2{
+            font-size: large;
+        }
+        .custom_ul_style{
+            list-style-type: disc;
+            list-style-position: inside;
+            /*padding: 20px;*/
+            padding-left: 15px;
+            
+        }
+        
+        ol{
+            color:red;
+        }
+        ol>li{
+            color:blue;
+        }
+        ol li::marker
+        {
+            color:rgb(255, 0, 183);
+        }
+        dt{
+            font-weight: bold;
+            color: darkgreen;
+        }
+        dd{
+            color:blueviolet;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .custom_ul_style{
+            list-style-type: none;
+            counter-reset: number;
+            font-style:italic
+        }
+        .custom_ul_style>li::before{
+            content: '-';
+            counter-increment: number;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h2>Multi level list</h2>
+    <ol>
+        <li>Lorem ipsum dolor sit.</li>
+        <ul>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+        </ul>
+        <li>Assumenda amet delectus minus?</li>
+        <ul>
+            <li>Bye</li>
+            <li>Bye</li>
+            <li>Bye</li>
+            <li>Bye</li>
+        </ul>
+        <li>Architecto atque expedita voluptatum?</li>
+        <li>Fuga harum optio sit!</li>
+        <li>Molestias sit dolores maiores.</li>
+    </ol>
+    
+    <h2>Custom style</h2>
+    <ul class="custom_ul_style">
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.Lorem ipsum dolor sit.
+            Lorem ipsum dolor sit.Lorem ipsum dolor sit.
+            Lorem ipsum dolor sit.</li>
+        <li>Nesciunt qui saepe rem!</li>
+        <li>Iure expedita earum provident!</li>
+        <li>Provident numquam ipsa dicta?</li>
+        <li>Saepe voluptatibus est pariatur.</li>
+    </ul>
+
+
+    <h2>Default list</h2>
+    <h2>Unordered List</h2>
+    <ul>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Nesciunt qui saepe rem!</li>
+        <li>Iure expedita earum provident!</li>
+        <li>Provident numquam ipsa dicta?</li>
+        <li>Saepe voluptatibus est pariatur.</li>
+    </ul>
+    <h2>Ordered List</h2>
+    <ol start="10">
+        <li>Lorem ipsum dolor sit.</li>
+        <li>A consequuntur quia adipisci?</li>
+        <li>Temporibus dicta excepturi quas.</li>
+        <li>Aspernatur at dicta consectetur.</li>
+        <li>Vitae deleniti quidem sequi?</li>
+    </ol>
+    <h2>Definition List</h2>
+    <dt>HTML</dt>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid doloremque minus, corporis et voluptates earum.</dd>
+
+    <dt>CSS</dt>
+    <dd>Very cool technologi</dd>
+</body>
+</html>
