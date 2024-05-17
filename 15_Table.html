@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            border:1px solid black;
+            border-collapse: separate;
+            border-spacing: 10px;
+            background-color: aquamarine;
+            background-image: url(./markers/arr.gif);
+            empty-cells: hide;
+        }
+        th{
+            border:1px solid red;
+        }
+        tr{
+            background-color: antiquewhite;
+        }
+        td{
+            border: 1px solid blue;
+        }
+        #uniq{
+            width:30vw;
+            height: 20vh;
+            text-align: center;
+            vertical-align: baseline;
+            background-color: rgb(220, 162, 74);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>
+                Column 1
+            </th>
+            <th>
+                Column 2
+            </th>
+            <th>
+                Column 3
+            </th>
+        </tr>
+        <tr>
+            <td>Lorem1 </td>
+            <td id="uniq">Omnis2</td>
+            <td>Dolorum3</td>
+        </tr>
+        <tr>
+            <td>Lorem4</td>
+            <td>Omnis5</td>
+            <td>Dolorum6</td>
+        </tr>
+    </table>
+</body>
+</html>
