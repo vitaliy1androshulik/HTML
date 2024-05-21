@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav ul{
+            list-style: none;
+            
+        }
+        nav ul li{
+            display: inline-block;
+        }
+        div hr{
+            width: 190px;
+            height: 4px;
+            background-color: rgb(197, 15, 85);
+            border-style: none;
+        }
+        div button{
+            
+            width: 80px;
+            height: 33px;
+            color: white;
+            background-color: rgb(210, 15, 90);
+            border-radius: 5px;
+            border-style: none;
+            margin-top:12px;
+        }
+        div{
+            text-align: center;
+            width: 190px;
+            height: 315px;
+            margin:15px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+        }
+        div h2{
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 2px;
+            display: inline-block;
+        }
+        div h1{
+            font-size: 35px;
+            margin-top: 6%;
+            margin-bottom: 0px;
+        }
+        div h3{
+            margin-top: 2px;
+            margin-bottom:20px;
+            color: rgb(208, 208, 208);
+        }
+        div p{
+            font-weight:bold;
+            font-size: 13px;
+            margin-top: 0px;
+            margin-bottom: 12px;
+            padding-right: 10px;
+            padding-left:10px;
+        }
+
+        .orange_color hr{
+            background-color: rgb(236, 148, 6);
+        }
+        .orange_color button{
+            background-color: rgb(236, 148, 6);
+        }
+
+        .blue_color hr{
+            background-color: rgb(76, 100, 166);
+        }
+        .blue_color button{
+            background-color: rgb(72, 94, 156);
+        }
+
+        .green_color hr{
+            background-color: rgb(63, 159, 95);
+        }
+        .green_color button{
+            background-color: rgb(63, 159, 95);
+        }
+
+        div{
+            transition: 1s;
+        }
+        div:hover{
+            transform:scale(1.15)
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <div>
+                    <h2>ENTERPISE</h2><hr>
+                    <h1>$69</h1>
+                    <h3>per month</h3>
+        
+                    <p>10GB disk space</p>
+                    <p>100GB monthly bandwich</p>
+                    <p>20 email accounts</p>
+                    <p>Unlimited subdomens</p>
+                    <button>BUY</button>
+                </div>
+            </li>
+            <li>
+                <div class="orange_color">
+                    <h2>PROFESSIONAL</h2><hr>
+                    <h1>$29</h1>
+                    <h3>per month</h3>
+        
+                    <p>5GB disk space</p>
+                    <p>60GB monthly bandwich</p>
+                    <p>10 email accounts</p>
+                    <p>Unlimited subdomens</p>
+                    <button>BUY</button>
+                </div>
+            </li>
+            <li>
+                <div class="blue_color">
+                    <h2>STANDART</h2><hr>
+                    <h1>$19</h1>
+                    <h3>per month</h3>
+        
+                    <p>3GB disk space</p>
+                    <p>30GB monthly bandwich</p>
+                    <p>5 email accounts</p>
+                    <p>Unlimited subdomens</p>
+                    <button>BUY</button>
+                </div>
+            </li>
+            <li>
+                <div class="green_color">
+                    <h2>BASIC</h2><hr>
+                    <h1>$9</h1>
+                    <h3>per month</h3>
+        
+                    <p>1GB disk space</p>
+                    <p>10GB monthly bandwich</p>
+                    <p>2 email accounts</p>
+                    <p>Unlimited subdomens</p>
+                    <button>BUY</button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
