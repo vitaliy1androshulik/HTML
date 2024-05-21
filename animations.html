@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+
+    <style>
+        #bullet {
+            margin: 10px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: green;
+
+            animation: falling 2s ease-in 3s 5;
+        }
+
+        #bullet:active {
+            /* animation: name duration funciton delay iteration direction fill-mode */
+            animation: morganie 1s ease 0s infinite alternate;
+        }
+
+
+        @keyframes falling {
+            0% {
+                margin-top: 0;
+            }
+
+            80% {
+                margin-top: 70%;
+            }
+
+            90% {
+                margin-top: 60%;
+            }
+
+            95% {
+                margin-top: 70%;
+            }
+
+            98% {
+                margin-top: 65%;
+            }
+
+            100% {
+                margin-top: 70%;
+            }
+        }
+
+        @keyframes morganie {
+            0% {
+                background-color: white;
+            }
+
+            50% {
+                background-color: black;
+            }
+
+            100% {
+                background-color: red;
+            }
+        }
+
+    </style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers msdt:dt="string">&#1059;&#1095;&#1072;&#1089;&#1085;&#1080;&#1082;&#1080; &#1055;&#1059;111 9:00</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers>
+<mso:SharedWithUsers msdt:dt="string">45;#&#1059;&#1095;&#1072;&#1089;&#1085;&#1080;&#1082;&#1080; &#1055;&#1059;111 9:00</mso:SharedWithUsers>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body>
+    <div id="bullet"></div>
+
+</body>
+
+</html>
