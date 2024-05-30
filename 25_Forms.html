@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+            background-color: white;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            background-color: lightgray;
+            padding:10px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-radius: 6px;
+            max-width: 700px;
+            margin:auto;
+        }
+        form>label{
+            display: inline-grid;
+            grid-template-columns: 100px 1fr;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        label input[type="radio"]{
+            vertical-align: middle;
+            padding: 20px;
+
+        }
+        label input
+        {
+            flex-grow: 1;
+        }
+        label input[type="color"]
+        {
+            width: 100%;
+        }
+        form h2{
+            text-align: center;
+        }
+        input
+        {
+            background-color: blanchedalmond;
+            border: none;
+            padding: 5px;
+            border-radius: 4px;
+            transition: .3s;
+        }
+        input:focus{
+            outline: none;
+            background-color: rgb(248, 208, 148);
+            box-shadow: 2px 2px 10px black;
+            transition: 0.5s;
+        }
+        button{
+            background-color: rgb(248, 208, 148);
+            border:none;
+            padding: 10px;
+            border-radius: 6px;
+            margin:5px;
+            transition: 0.5s;
+
+        }
+        button:hover{
+            box-shadow: 2px 2px 10px black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Working with form</h2>
+    <hr>
+    <form action="" method="post">
+        <label for="name-input">Name :
+             <input type="text" id="name-input" placeholder="Enter your Name!"></label> 
+        <label>Number : <input type="number"></label>
+        <label>Date : <input type="date"></label>
+        <label>Color : <input type="color"></label>
+        <label>Time : <input type="time"></label>
+        <label>CheckBox : <input type="checkbox"></label>
+        <label>Tel : <input type="tel"></label>
+        <label>Email : <input type="email"></label>
+        <label>File : <input type="file"></label>
+        <label>Url : <input type="url"></label>
+
+        <label>Delivery type : 
+        <div>
+            <label>Econom : <input type="radio" name="type"></label>
+            <label>Standart : <input type="radio" name="type"></label>
+            <label>Super : <input type="radio" name="type"></label>
+        </div>
+    </label>
+    <label for="">Select : 
+        <select>
+            <option>Good</option>
+            <option selected>Normal</option>
+            <option>Bad</option>
+        </select>
+    </label>
+    <label>Range : <input type="range"></label>
+    <button type="button">Push me!</button>
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

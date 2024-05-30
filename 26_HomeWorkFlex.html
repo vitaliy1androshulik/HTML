@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        body{ 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(243, 179, 61);
+            color:white;
+            margin-top: 0px;
+            height: 45px;
+        }
+       h1{
+            display:flex;
+            justify-content: center;
+            background-color: rgb(243, 179, 61);
+            color: white;
+            padding: 15px;
+            margin-bottom: 0px;
+        }
+        .container{
+            padding: 10px;
+            background-color: white;
+            width: 30%;
+            height: 90%;
+            padding: 10px;  
+            
+        }
+        .container p{
+            font-size: 20px;
+        }
+        
+        .container button{
+            border:1px solid black;
+            width: 100%;
+            display:flex;
+            justify-content:center;
+            align-content: flex-end;
+            align-items: flex-end;
+        }
+        .main_container{
+            height: 550px;
+            list-style: none;
+            display:flex;
+            justify-content: space-evenly;
+            margin-top: 0px;
+            background-color: gray;
+            align-items: center;
+        }
+
+
+        .upper{
+            color:orange;
+            padding: 5px;
+            display: flex;
+            background-color: white;
+            background-color: rgb(199, 198, 198);
+            justify-content: space-around;
+            align-items: center;
+        }
+        .upper button{
+            padding: 10px;
+            width: 18.8%;
+            color:orange;
+            border-radius: 0px;
+            font-size: 16px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Power Grid: Store of Homepage</h1>
+    <div class="upper">
+        <button>Home</button>
+        <button>About</button>
+        <button>Blog</button>
+        <button>Careers</button>
+        <button>Contact Us</button>
+    </div>  
+    <body>
+        <div class="main_container">
+            <div class="container">
+                <img src="./images/horse.jpg" alt="" height="65%" width="100%">
+                <p>This is some awesome content
+                    that is on the page</p>
+                <button type="button">Go Somewhere</button>
+            </div>
+            <div class="container">
+                <img src="./images/deer.jpg" alt="" height="65%" width="100%">
+                <p>This is more content than the previous
+                    box, but less than the next
+                </p>
+                <button type="button">Click Me</button>
+            </div>
+            <div class="container">
+                <img src="./images/goat.jpg" alt="" height="65%" width="100%">
+                    <p>We have lots of content
+                        here to show that content can
+                        grow, and everything can be the same
+                        size if you use flexbox. Even if
+                        this as tons of text, it will line up
+                        with the other sections.
+                    </p>
+                <div class="div_button"><button type="button" class="push">Do Somewhere</button></div>
+            </div>
+        </div>
+    </body>
+    <h2>Copyright &#169; 2016</h2>
+</body>
+</html>
