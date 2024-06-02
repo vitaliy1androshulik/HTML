@@ -7,14 +7,41 @@ body {
     font-family: 'customfont';
 }
 
-.nav-menu{
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
     display: flex;
     align-items: center;
-    padding: 10px;
 }
-.nav-menu h2{
+
+.nav-menu h2 {
+    margin-right: 20px;
+}
+
+.nav-menu nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.icon-container img {
+    margin-left: 10px;
     margin-right: 35px;
+    width: 24px;  /* Adjust icon size as needed /
+    height: 24px;  / Adjust icon size as needed */
 }
+    
 .nav-menu a{
     margin-right: 35px;
     font-size: 20px;
@@ -86,12 +113,193 @@ nav a:hover {
 .scnd_container_p{
     font-size:22px;
 }
-.gallery{
+.gallery h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.gallery-item {
+    position: relative;
+    display: inline-block;
+}
+
+.gallery-item img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1.5em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover img {
+    opacity: 0.7;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.photos img {
+    margin: 0;
+    padding: 0;
+}
+
+.features h2{
+    font-weight: lighter;
+    font-size: 40px;
+}  
+.features{
+    margin-top: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.features table{
+    border-collapse: collapse;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.features table th:nth-child(1){
+    border-right: 1px solid rgba(0, 0, 0, 0.229);
+}
+.features table th:nth-child(2){
+    border-right: 1px solid rgba(0, 0, 0, 0.229);
+}
+.features table thead tr:nth-child(1){
+    border-bottom: 1px solid rgba(0, 0, 0, 0.229);
+}
+.features table th h2{
+        font-size: 20px;  
+        text-align: center;
+        margin-bottom: 25px;  
+}
+.features table img{
+    margin-top: 70px;
+}
+.features table th p{
+    font-weight: lighter;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+.features table{
+    margin-right:50px;
+    width: 70%;
+
+}
+.features img{
+    margin-left: 7px;
+}
+.form-container h2{
+    font-size: 40px;
+    margin-top: 50px;
+    font-weight: lighter;
+}
+.form-container {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-group label {
+    width: 1200px;
+    display: block;
+    color: #4a5568;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.375rem;
+}
+.form-group textarea {
+    resize: vertical;
+}
+.form-group-radio {
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-bottom: 1rem;
 }
-.gallery h2{
+.form-group-radio input {
+    margin-right: 0.5rem;
+}
+.form-group-checkbox {
+    display: flex;
+    align-items: center;
+}
+.form-group-checkbox input {
+    margin-right: 0.5rem;
+}
+.submit-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-left:1100px;
+    background-color: #e8e8e8;
+    color: #929292;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    
+    transition: background-color 0.5s ease;
+    transform: scale(1.1);
+}
+.submit-button:hover {
+    background-color: #cdcdcd;
+    
+}
+.icon-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-bottom img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 90%;
+    border: 1px solid black;
+    padding: 5px;
+
+}
+.last-h2{
+    margin-top: 25px;
+    text-align: center;
+    font-size:17px;
     font-weight: lighter;
-    font-size: 55px;
 }

@@ -7,9 +7,9 @@
 <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div>
+    <div class="menu">
         <div class="nav-menu"> 
-            <h2>TOUR-GIUDE</h2>
+            <h2>TOUR-GUIDE</h2>
             <nav>
                 <a href="#stories">Stories</a>
                 <a href="#gallery">Gallery</a>
@@ -17,10 +17,15 @@
                 <a href="#write-to-us">Write to us</a>
             </nav>
         </div>
-        <div>
-
+        <div class="icon-container">
+            <img src="./exam_icons/twitter-128.png" alt="Twitter">
+            <img src="./exam_icons//facebook-128.png" alt="Facebook">
+            <img src="./exam_icons//instagram-2-128.png" alt="Instagram">
+            <img src="./exam_icons//youtube-128.png" alt="YouTube">
+            <img class="last-icon" src="./exam_icons//gmail-128.png" alt="Gmail">
         </div>
     </div>
+
     <hr>
     <div class="container">
         <div>
@@ -52,6 +57,142 @@
     <hr>
     <div class="gallery">
         <h2>Gallery</h2>
+        <div class="gallery-images">
+            <div class="gallery-item">
+                <img src="./images/палатка.png" alt="Tent">
+                <div class="overlay">Tent</div>
+            </div>
+            <div class="gallery-item">
+                <img src="./images/каструля.png" alt="Pot">
+                <div class="overlay">Pot</div>
+            </div>
+            <div class="gallery-item">
+                <img src="./images/небо.png" alt="Sky">
+                <div class="overlay">Sky</div>
+            </div>
+            <div class="gallery-item">
+                <img src="./images/трави.png" alt="Grass">
+                <div class="overlay">Grass</div>
+            </div>
+        </div>
     </div>
+    <div class="features">
+        <h2>Features</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <div>
+                            <img src="./exam_icons/airplane-48.png" alt="">
+                            <h2>One</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </th>
+                    <th>
+                        <div>
+                            <img src="./exam_icons/map_marker-48.png" alt="">
+                            <h2>Two</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                    </th>
+                    <th>
+                        <div>
+                            <img src="./exam_icons/movie-48.png" alt="">
+                            <h2>Three</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>
+                        <div>
+                            <img src="./exam_icons/alarm_clock-48.png" alt="">
+                            <h2>Four</h2>
+                            <p>Lorem ipsum dolor sit amet elit!</p>
+                        </div>
+                    </th>
+                    <th>
+                        <div>
+                            <img src="./exam_icons/face-48.png" alt="">
+                            <h2>Five</h2>
+                            <p>Lorem consectetur adipisicing elit. 
+                                Quas excepturi eum nemo iste error quos!</p>
+                        </div>
+                    </th>
+                    <th>
+                        <div>
+                            <img src="./exam_icons/genius-48.png" alt="">
+                            <h2>Six</h2>
+                            <p>
+                                Quas excepturi eum nemo iste error quos!</p>
+                        </div>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="form-container">
+        <h2>Write to us</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="">Contact me via:</label>
+                <div class="form-group-radio">
+                    <input type="radio" id="emailContact" name="contact_method" value="email">
+                    <label for="emailContact">Email</label>
+                </div>
+                <div class="form-group-radio">
+                    <input type="radio" id="phoneContact" name="contact_method" value="phone">
+                    <label for="phoneContact">Phone</label>
+                </div>
+                <div class="form-group-radio">
+                    <input type="radio" id="telegramContact" name="contact_method" value="telegram">
+                    <label for="telegramContact">Telegram</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="topic">Topic:</label>
+                <select id="topic" name="topic">
+                    <option value="post">Post my story</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="inquiry">General Inquiry</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <div class="form-group form-group-checkbox">
+                <input type="checkbox" id="human" name="human">
+                <label for="human">I am a human</label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-button">SEND</button>
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div class="icon-bottom">
+        <img src="./exam_icons/twitter-128.png" alt="Twitter">
+        <img src="./exam_icons/facebook-128.png" alt="Facebook">
+        <img src="./exam_icons/instagram-2-128.png" alt="Instagram">
+        <img src="./exam_icons/youtube-128.png" alt="YouTube">
+        <img class="last-icon" src="./exam_icons/gmail-128.png" alt="Gmail">
+    </div>
+    <h2 class="last-h2">&#169;UNTITLED 2019</h2>
 </body>
 </html>
